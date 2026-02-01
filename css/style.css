@@ -6054,6 +6054,20 @@ nav.nav-scrolled {
 nav.nav-scrolled a {
   color: #ffffff !important;
 }
+
+/* Mobile menu fixes: koyu arka plan ve okunabilir link rengi */
+#mobile-menu {
+  /* Daha koyu, yarı saydam bir arka plan veriyoruz */
+  background-color: rgba(11,18,45,0.95) !important;
+  backdrop-filter: blur(6px);
+}
+#mobile-menu a {
+  color: #ffffff !important;
+}
+#mobile-menu a:hover {
+  color: #FF6B6B !important;
+}
+
 nav {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
