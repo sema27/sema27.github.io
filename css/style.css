@@ -6057,3 +6057,9 @@ nav.nav-scrolled a {
 nav {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Prevent horizontal overflow that causes page shift on large screens */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
