@@ -54,6 +54,32 @@
         --tw-contain-style:  ;
       }
 
+/* Projects: hide cards after the first 3 by default using a collapsed state to avoid FOUC */
+#projects.collapsed .grid > .group:nth-child(n+4) {
+  display: none;
+}
+
+/* Ensure button is clearly visible on small screens and centered */
+#show-more-projects {
+  cursor: pointer;
+}
+
+/* If the button ends up as a grid child, force it to span full row and center */
+#projects .grid > .show-more-wrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+/* General wrapper centering (when outside grid) */
+#projects .show-more-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Animations are enabled by default; no override when expanded. */
+
+
       ::backdrop {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
@@ -4303,6 +4329,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
       .animation-delay-4000 {
         animation-delay: 4s;
+      }
+
+      /* When projects is expanded, disable the slow "entrance" animations
+         for the project cards so they appear instantly. Hover/transform
+         transitions (e.g. group-hover:scale) remain active. */
+      #projects:not(.collapsed) .grid > .group {
+        animation: none !important;
+        -webkit-animation: none !important;
+        animation-duration: 0s !important;
+        animation-delay: 0s !important;
       }
 
       /* Line Clamp Utility */

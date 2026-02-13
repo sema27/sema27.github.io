@@ -129,4 +129,30 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000);
     });
   }
-});
+
+    // Projects: show only first 3 by default, toggle rest with the "Daha Fazla" button
+    (function () {
+      const projectsGrid = document.querySelector('#projects .grid');
+      const btn = document.getElementById('show-more-projects');
+      if (projectsGrid && btn) {
+          const projectsSection = document.getElementById('projects');
+
+          function setVisible(show) {
+            if (!projectsSection) return;
+            if (show) projectsSection.classList.remove('collapsed');
+            else projectsSection.classList.add('collapsed');
+            btn.textContent = show ? 'Daha Az' : 'Daha Fazla';
+            btn.dataset.showing = show ? 'true' : 'false';
+          }
+
+          // initial state: keep collapsed (section has collapsed class in HTML)
+          setVisible(false);
+
+          btn.addEventListener('click', function () {
+            const showing = btn.dataset.showing === 'true';
+            setVisible(!showing);
+          });
+      }
+    })();
+
+  });

@@ -1173,7 +1173,7 @@
                       x-id="About_100"
                       x-dynamic="true"
                     >
-                      3+
+                      5+
                     </div>
                     <div
                       class="text-sm text-gray-600"
@@ -1189,6 +1189,7 @@
                 </div>
               </div>
             </div>
+              
           </div>
         </section>
         <section
@@ -2469,7 +2470,7 @@
         </section>
         <section
           id="projects"
-          class="py-20 bg-white"
+          class="py-20 bg-white collapsed"
           x-file-name="Projects"
           x-line-number="21"
           x-component="section"
@@ -2540,6 +2541,84 @@
               x-id="Projects_55"
               x-dynamic="true"
             >
+              <!-- Yeni proje: en başta gösterilecek -->
+              <div
+                class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in-up"
+                x-file-name="Projects"
+                x-line-number="55"
+                x-component="div"
+                x-id="Projects_new"
+                x-dynamic="true"
+                style="animation-delay: 0ms"
+              >
+                <div class="relative overflow-hidden h-64">
+                  <img
+                    alt="Aura & Matter Web Sitesi"
+                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    src="img/aura-matter.png"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#1a237e] via-[#1a237e]/50 to-transparent opacity-60"></div>
+                  <div class="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium border border-white/30">Fullstack Web</div>
+                </div>
+                <div class="p-6">
+                  <h4 class="text-xl font-bold text-[#1a237e] mb-3 group-hover:text-[#FF6B6B] transition-colors duration-300">Aura & Matter Web Sitesi</h4>
+                  <p class="text-gray-600 mb-4 line-clamp-3">Bu proje, kendimi geliştirmek için React teknolojisi ile yapmış olduğum hayali bir markaya ait örnek bir web projesidir.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-[#F8F9FA] text-gray-700 text-xs rounded-full border border-gray-200">React</span>
+                    <span class="px-3 py-1 bg-[#F8F9FA] text-gray-700 text-xs rounded-full border border-gray-200">Tailwind CSS</span>
+                  </div>
+                  <div
+                    class="flex space-x-3"
+                    x-file-name="Projects"
+                    x-line-number="112"
+                    x-component="div"
+                    x-id="Projects_112"
+                    x-dynamic="true"
+                  >
+                    <a
+                      href="https://aura-matter.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex-1 flex items-center justify-center space-x-2 px-4 py-2 bg-[#FF6B6B] text-white rounded-lg hover:bg-[#ff5252] transition-colors duration-300"
+                      x-file-name="Projects"
+                      x-line-number="114"
+                      x-component="a"
+                      x-id="Projects_114"
+                      x-dynamic="true"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-external-link"
+                        aria-hidden="true"
+                        x-file-name="Projects"
+                        x-line-number="120"
+                        x-component="ExternalLink"
+                        x-id="Projects_120"
+                        x-dynamic="true"
+                      >
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14 21 3"></path>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path></svg><span
+                        x-file-name="Projects"
+                        x-line-number="121"
+                        x-component="span"
+                        x-id="Projects_121"
+                        x-dynamic="true"
+                        >Siteyi Gör</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
               <div
                 class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in-up"
                 x-file-name="Projects"
@@ -3612,7 +3691,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="w-full text-center mt-8 show-more-wrapper">
+                <button id="show-more-projects" data-showing="false" class="px-6 py-3 bg-[#1a237e] text-white rounded-lg hover:bg-[#0d1642] transition-colors duration-300">Daha Fazla</button>
+              </div>
           </div>
         </section>
         <section
