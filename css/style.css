@@ -54,9 +54,15 @@
         --tw-contain-style:  ;
       }
 
-/* Projects: hide cards after the first 3 by default using a collapsed state to avoid FOUC */
-#projects.collapsed .grid > .group:nth-child(n+4) {
+/* Projects: in collapsed mode always show the same 3 featured cards */
+#projects.collapsed .grid > .group {
   display: none;
+}
+
+#projects.collapsed .grid > [x-id="Projects_orderflow"],
+#projects.collapsed .grid > [x-id="Projects_sakarlar"],
+#projects.collapsed .grid > [x-id="Projects_cvportfolio"] {
+  display: block;
 }
 
 /* Ensure button is clearly visible on small screens and centered */
