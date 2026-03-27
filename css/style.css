@@ -61,7 +61,7 @@
 
 #projects.collapsed .grid > [x-id="Projects_orderflow"],
 #projects.collapsed .grid > [x-id="Projects_sakarlar"],
-#projects.collapsed .grid > [x-id="Projects_cvportfolio"] {
+#projects.collapsed .grid > [x-id="Projects_filesone"] {
   display: block;
 }
 
