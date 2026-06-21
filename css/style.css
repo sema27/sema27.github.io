@@ -59,9 +59,9 @@
   display: none;
 }
 
-#projects.collapsed .grid > [x-id="Projects_orderflow"],
-#projects.collapsed .grid > [x-id="Projects_sakarlar"],
-#projects.collapsed .grid > [x-id="Projects_filesone"] {
+#projects.collapsed .grid > [x-id="Projects_rotaparlax"],
+#projects.collapsed .grid > [x-id="Projects_filesone"],
+#projects.collapsed .grid > [x-id="Projects_sakarlar"] {
   display: block;
 }
 
